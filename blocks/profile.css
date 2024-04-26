@@ -1,0 +1,47 @@
+.profile {
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: row;
+  max-width: 882px;
+  align-items: center;
+}
+.profile__avatar {
+  max-width: 120px;
+  width: 100%;
+  max-height: 120px;
+}
+.profile-info {
+  padding-left: 30px;
+  max-width: 414px;
+  max-height: 77px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.avatar__info_name {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 56px;
+  max-width: 373px;
+  max-height: 43px;
+}
+.avatar__info_ocupation {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: auto;
+  width: 372px;
+}
+.avatar__info_edit_button {
+  max-width: 24px;
+  width: 100%;
+  max-height: 24px;
+  padding-left: 17px;
+  align-items: center;
+}
+.profile__button {
+  padding-left: 168px;
+}

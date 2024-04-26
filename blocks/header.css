@@ -5,12 +5,8 @@
   max-height: 74px;
   padding-top: 45px;
   margin: auto;
+  border-bottom: solid #545454;
 }
 .header__logo {
   margin-bottom: 41px;
-}
-.hr {
-  margin: 0;
-  border: 0;
-  border-bottom: 1px solid #545454;
 }
