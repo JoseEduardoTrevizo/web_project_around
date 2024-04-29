@@ -1,0 +1,75 @@
+.places {
+  margin: auto;
+  max-width: 882px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 18px;
+  row-gap: 100px;
+}
+.elements {
+  margin: 0;
+  width: 282px;
+  height: 282px;
+  position: relative;
+}
+.elements-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+}
+.elements-card__element_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.elements-card__element_trash {
+  z-index: 1000;
+  display: flex;
+  width: 18px;
+  height: 19.5px;
+  margin-top: 18px;
+  margin-right: 15px;
+}
+.elements-name {
+  background-color: white;
+  max-width: 282px;
+  width: 100%;
+  height: 79px;
+  display: flex;
+  justify-content: end;
+  border-radius: 0 0 10px 10px;
+  justify-content: flex-start;
+}
+.elements-name__place {
+  margin: 0;
+  max-width: 246px;
+  width: 100%;
+  height: 23px;
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 25px;
+  padding-left: 21px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.elements-name__place_like {
+  display: flex;
+  width: 21px;
+  height: 19px;
+  padding-right: 30px;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 890px) {
+  .places {
+    max-width: 280px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
