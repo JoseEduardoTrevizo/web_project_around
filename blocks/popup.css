@@ -1,0 +1,114 @@
+.modal {
+  display: none; /* por defecto estara oculto*/
+  position: fixed; /* posicion fija */
+  z-index: 1000; /* se posiciona por encima de los elementos*/
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  max-width: 430px;
+}
+.popup__container {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+.popup__close {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  top: -40px;
+  right: -430px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.popup__close:hover {
+  opacity: 0.5;
+}
+.popup__container-fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  max-width: 430px;
+  width: 100%;
+  max-height: 330px;
+  height: 100%;
+  flex-direction: column;
+}
+.popup__info_title {
+  max-width: 330px;
+  width: 100%;
+  padding: 0 64px 54px 36px;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  justify-content: start;
+}
+.popup__info_name {
+  margin: auto;
+  max-width: 358px;
+  width: 100%;
+  height: 27px;
+  border: 0;
+  color: #c4c4c4;
+  border-bottom: solid #c4c4c4;
+}
+.popup__info_about {
+  margin: 30px auto 0;
+  max-width: 358px;
+  width: 100%;
+  height: 27px;
+  border: 0;
+  color: #c4c4c4;
+  border-bottom: solid #c4c4c4;
+}
+.popup__info_button {
+  margin: 48px auto 36px;
+  border: 0;
+  max-width: 358px;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+}
+.popup__info_button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 890px) {
+  .popup__container-fieldset {
+    max-width: 280px;
+    max-height: 320px;
+  }
+  .popup__info_title {
+    max-width: 238px;
+    padding: 0 22px 54px 22px;
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+  .popup__info_name {
+    max-width: 238px;
+  }
+  .popup__info_about {
+    max-width: 238px;
+  }
+  .popup__info_button {
+    max-width: 238px;
+    height: 46px;
+  }
+  .popup__close {
+    right: -243px;
+    width: 26px;
+    height: 26px;
+  }
+}

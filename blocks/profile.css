@@ -41,9 +41,16 @@
   max-height: 24px;
   padding-left: 17px;
   align-items: center;
+  cursor: pointer;
+}
+.profile__edit-button:hover {
+  opacity: 0.5;
 }
 .profile__button-add {
-  padding-left: 168px;
+  margin-left: 168px;
+}
+.profile__button-add:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 890px) {

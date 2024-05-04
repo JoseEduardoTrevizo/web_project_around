@@ -28,12 +28,15 @@
   border-radius: 10px 10px 0 0;
 }
 .elements-card__element_trash {
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   width: 18px;
   height: 19.5px;
   margin-top: 18px;
   margin-right: 15px;
+}
+.elements-card__element_trash:hover {
+  opacity: 0.5;
 }
 .elements-name {
   background-color: white;
@@ -64,6 +67,9 @@
   height: 19px;
   padding-right: 30px;
   padding-left: 0;
+}
+.elements-name__place_like:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 890px) {

@@ -2,21 +2,21 @@
   margin: 0;
   padding-top: 79px;
 }
-.footer__copyright {
+.copyright {
   margin: auto;
   max-width: 882px;
 }
-.footer__copyright_author {
+.copyright__footer_author {
   margin: 0;
   color: #545454;
   padding-top: 67px;
 }
 
 @media screen and (max-width: 890px) {
-  .footer__copyright {
+  .copyright {
     max-width: 280px;
   }
-  .footer__copyright_author {
+  .copyright__footer_author {
     padding-top: 48px;
   }
 }
