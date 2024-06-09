@@ -1,7 +1,7 @@
-var modal = document.getElementById("ventana_modal");
-var boton = document.getElementById("btn_open_modal"); //boton que abre el modal
-var cerrar = document.getElementById("btn_close_modal"); //boton que cierra el modal
-var save = document.getElementById("btn_save");
+const modal = document.getElementById("ventana_modal");
+const boton = document.getElementById("btn_open_modal"); //boton que abre el modal
+const cerrar = document.getElementById("btn_close_modal"); //boton que cierra el modal
+const save = document.getElementById("btn_save");
 const modalAdd = document.querySelector("#ventana_modal-add");
 const btnAdd = document.querySelector(".profile__button-add");
 const btnClose = document.querySelector("#btn_close_modal-add");
