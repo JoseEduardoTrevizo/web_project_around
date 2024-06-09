@@ -10,5 +10,6 @@ La página web de la Around the U.S es el QUINTO proyecto en el programa de Inge
 -	Flexbox, FlexGrid
 -	Posicionamiento
 -	Ventanas modal
+-	Funciones
 -	https://joseeduardotrevizo.github.io/web_project_around/
 
