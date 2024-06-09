@@ -48,6 +48,7 @@
 }
 .profile__button-add {
   margin-left: 168px;
+  cursor: pointer;
 }
 .profile__button-add:hover {
   opacity: 0.5;

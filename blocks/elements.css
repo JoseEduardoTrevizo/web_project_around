@@ -36,6 +36,7 @@
   height: 19.5px;
   margin-top: 18px;
   margin-right: 15px;
+  cursor: pointer;
 }
 .elements-card__element_trash:hover {
   opacity: 0.5;
@@ -86,9 +87,13 @@
 }
 
 @media screen and (max-width: 890px) {
-  .places {
+  .elements {
     max-width: 280px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+  }
+  .places {
+    display: flex;
+    justify-content: center;
   }
 }
