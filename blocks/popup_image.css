@@ -26,7 +26,7 @@
   max-width: 33px;
   max-height: 33px;
   cursor: pointer;
-  right: 180px;
+  right: 220px;
   top: 50px;
 }
 .modalImage__open {
@@ -38,6 +38,6 @@
   position: absolute;
   margin: 0;
   bottom: -30px;
-  left: 220px;
+  left: 260px;
   color: white;
 }

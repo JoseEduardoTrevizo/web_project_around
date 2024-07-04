@@ -107,8 +107,11 @@
     height: 46px;
   }
   .popup__close {
-    right: -243px;
+    right: -270px;
     width: 26px;
     height: 26px;
+  }
+  .popup__container-fieldset {
+    margin: auto;
   }
 }

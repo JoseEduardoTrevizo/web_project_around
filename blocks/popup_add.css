@@ -110,8 +110,11 @@
     height: 46px;
   }
   .popup-add__close-add {
-    right: -243px;
+    right: -270px;
     width: 26px;
     height: 26px;
+  }
+  .popup-add__container-fieldset {
+    margin: auto;
   }
 }
