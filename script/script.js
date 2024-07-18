@@ -2,6 +2,8 @@ const modal = document.getElementById("ventana_modal");
 const boton = document.getElementById("btn_open_modal"); //boton que abre el modal
 const cerrar = document.getElementById("btn_close_modal"); //boton que cierra el modal
 const save = document.getElementById("btn_save");
+const modalImage = document.querySelector(".modalImage");
+const modalContent = document.querySelector(".modalImage__content");
 const modalAdd = document.querySelector("#ventana_modal-add");
 const btnAdd = document.querySelector(".profile__button-add");
 const btnClose = document.querySelector("#btn_close_modal-add");
@@ -20,7 +22,6 @@ const linkInput = document.querySelector(".popup-add__create_link");
 const placeImage = document.querySelector(".elements-card__element_image");
 const placeTitle = document.querySelector(".elements-name__place");
 const btnCreate = document.querySelector("#btn_save-add");
-
 const initialCards = [
   {
     name: "Valle de Yosemite",
@@ -91,8 +92,43 @@ initialCards.forEach(function (element) {
 boton.addEventListener("click", function (evt) {
   modal.style.display = "block";
 });
+
+const closeWindow = function () {
+  cerrar.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+};
 cerrar.addEventListener("click", function () {
   modal.style.display = "none";
+});
+//Funcion para cerrar modal con tecla ESC
+window.addEventListener(
+  "keyup",
+  function (evt) {
+    const esc = evt.keyCode || evt.which;
+    if (esc == 27) {
+      modal.style.display = "none";
+      modalAdd.style.display = "none";
+      modalImage.style.display = "none";
+    }
+  },
+  false
+);
+//Funcion para cerrar el modal en superposicion
+window.addEventListener("click", function (e) {
+  console.log(window);
+  console.log(e);
+  if (e.target == modal) {
+    modal.style.display = "none";
+    console.log(e);
+  } else if (e.target == modalAdd) {
+    modalAdd.style.display = "none";
+  } else if (e.target == modalImage || e.target == modalContent) {
+    modalImage.style.display = "none";
+    console.log(e);
+  } else {
+    false;
+  }
 });
 save.addEventListener("click", function () {
   modal.style.display = "none";

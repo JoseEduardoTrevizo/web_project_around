@@ -62,7 +62,6 @@
   width: 100%;
   height: 27px;
   border: 0;
-  color: #c4c4c4;
   border-bottom: solid #c4c4c4;
 }
 .popup-add__create_link {
@@ -71,8 +70,14 @@
   width: 100%;
   height: 27px;
   border: 0;
-  color: #c4c4c4;
   border-bottom: solid #c4c4c4;
+}
+.form__input_type_error {
+  color: #ff0000;
+  border-bottom: 1px solid #ff0000;
+}
+.input__error_link {
+  margin-top: 200px;
 }
 .popup-add__create_button {
   margin: 48px auto 36px;
