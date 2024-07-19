@@ -69,14 +69,14 @@ function setEventListener(formElements) {
 }
 function showErrorMessage(formElements, inputsElements) {
   const errorNode = formElements.querySelector(
-    `.input__error_${inputsElements.name}`
+    `.popup__error_${inputsElements.name}`
   );
 
   errorNode.textContent = inputsElements.validationMessage;
 }
 function hideErrorMessage(formElements, inputsElements) {
   const errorNode = formElements.querySelector(
-    `.input__error_${inputsElements.name}`
+    `.popup__error_${inputsElements.name}`
   );
   errorNode.textContent = "";
 }
