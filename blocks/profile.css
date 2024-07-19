@@ -26,6 +26,7 @@
   line-height: 56px;
   max-width: 373px;
   max-height: 43px;
+  overflow: hidden;
 }
 .profile-info__avatar_ocupation {
   margin: 0;
@@ -34,6 +35,7 @@
   font-weight: 400;
   line-height: auto;
   width: 372px;
+  overflow: hidden;
 }
 .profile__edit-button {
   max-width: 24px;
