@@ -1,10 +1,11 @@
 import { openImagePopup } from "./utils.js";
 
 export default class Card {
-  constructor(name, link, template) {
+  constructor(name, link, template, { handleCardClick }) {
     this._name = name;
     this._link = link;
     this._template = template;
+    this._handleCardClick = handleCardClick;
   }
   _getTemplate() {
     const cardElement = document
@@ -40,7 +41,7 @@ export default class Card {
     this._element
       .querySelector(".elements-card__element_image")
       .addEventListener("click", () => {
-        this._handlerOpenPopup();
+        this._handleCardClick(this._name, this._link);
       });
 
     this._element

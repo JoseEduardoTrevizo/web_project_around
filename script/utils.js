@@ -1,13 +1,13 @@
 import { cardGenerator } from "./script.js";
-const modal = document.getElementById("ventana_modal");
-const boton = document.getElementById("btn_open_modal"); //boton que abre el modal
-const cerrar = document.getElementById("btn_close_modal"); //boton que cierra el modal
+export const modal = document.getElementById("ventana_modal");
+export const boton = document.getElementById("btn_open_modal"); //boton que abre el modal
+export const cerrar = document.getElementById("btn_close_modal"); //boton que cierra el modal
 const save = document.getElementById("btn_save");
-const modalImage = document.querySelector(".modalImage");
+export const modalImage = document.querySelector(".modalImage");
 const modalContent = document.querySelector(".modalImage__content");
-const modalAdd = document.querySelector("#ventana_modal-add");
-const btnAdd = document.querySelector(".profile__button-add");
-const btnClose = document.querySelector("#btn_close_modal-add");
+export const modalAdd = document.querySelector("#ventana_modal-add");
+export const btnAdd = document.querySelector(".profile__button-add");
+export const btnClose = document.querySelector("#btn_close_modal-add");
 const profileName = document.querySelector(".profile-info__avatar_name");
 const profileAbout = document.querySelector(".profile-info__avatar_ocupation");
 const inputName = document.querySelector("#input_name");
@@ -15,7 +15,7 @@ const inputAbout = document.querySelector("#input_about");
 const formProfile = document.querySelector(".popup__container");
 const formCards = document.querySelector("#popup_addCard");
 const cardArea = document.querySelector(".elements");
-const nameInput = document.querySelector("#input_name");
+const nameInput = document.querySelector("#input_title");
 const linkInput = document.querySelector(".popup__info_link");
 const btnCreate = document.querySelector("#btn_save-add");
 
@@ -31,7 +31,7 @@ export function openImagePopup(name, link) {
     Image.style.display = "none";
   });
 }
-
+/*
 //Funcion para cerrar modal con tecla ESC
 window.addEventListener(
   "keyup",
@@ -50,11 +50,6 @@ boton.addEventListener("click", function (evt) {
   modal.style.display = "block";
 });
 
-const closeWindow = function () {
-  cerrar.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-};
 cerrar.addEventListener("click", function () {
   modal.style.display = "none";
 });
@@ -87,7 +82,7 @@ btnClose.addEventListener("click", function () {
 });
 btnCreate.addEventListener("click", function () {
   modalAdd.style.display = "none";
-});
+});*/
 formProfile.addEventListener("submit", function (evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
