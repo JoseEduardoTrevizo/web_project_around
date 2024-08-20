@@ -12,6 +12,7 @@ import {
 import Section from "./components/Section.js";
 import UserInfo from "./components/UserInfo.js";
 import PopupWithForm from "./components/PopupWithForm.js";
+import PopupWithImage from "./components/PopupWithImage.js";
 import { cardGenerator } from "./utils/utils.js";
 const formProfile = document.querySelector(".popup__container");
 const formCards = document.querySelector("#popup_addCard");
@@ -43,7 +44,7 @@ const initialCards = [
   },
 ];
 //Instanciar para agregar imagenes con el handlerCardClick
-
+const popupImage = new PopupWithImage("#popup_add");
 const popupAddButton = new PopupWithForm(
   "#ventana_modal-add",
   (inputValues) => {

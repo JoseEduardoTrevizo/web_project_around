@@ -12,7 +12,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
     publicPath: "",
-    assetModuleFilename: "images/[name]_[hash][ext][query]",
   },
   target: ["web", "es5"],
   stats: { children: true }, // Muestra los errores de compilación hijos de los plugins
