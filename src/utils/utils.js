@@ -14,6 +14,7 @@ export const profileAbout = document.querySelector(
 export const popupCard = document.querySelector(".modalImage");
 export const inputName = document.querySelector("#input_name");
 export const inputAbout = document.querySelector("#input_about");
+const popupImage = new PopupWithImage(".modalImage");
 
 export function openImagePopup(name, link) {
   const Image = document.querySelector(".modalImage");

@@ -44,7 +44,7 @@ const initialCards = [
   },
 ];
 //Instanciar para agregar imagenes con el handlerCardClick
-const popupImage = new PopupWithImage("#popup_add");
+const popupImageCard = new PopupWithImage("#popup_add");
 const popupAddButton = new PopupWithForm(
   "#ventana_modal-add",
   (inputValues) => {
@@ -54,7 +54,7 @@ const popupAddButton = new PopupWithForm(
       ".template-card",
       {
         handleCardClick: () => {
-          popupImage.open(inputValues.name, inputValues.link);
+          popupImageCard.open(inputValues.name, inputValues.link);
         },
       }
     );
