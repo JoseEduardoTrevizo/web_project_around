@@ -20,11 +20,19 @@
 
       <main class="content">
         <section class="profile">
-          <img
-            src="<%=require('./images/Avatar.png')%>"
-            alt="Avatar"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-picture">
+            <img
+              src="<%=require('./images/Avatar.png')%>"
+              alt="Avatar"
+              class="profile__avatar"
+            />
+
+            <img
+              src="<%=require('./images/Vector.png')%>"
+              alt="Edit"
+              class="profile__avatar-edit"
+            />
+          </div>
           <div class="profile-info">
             <h2 class="profile-info__avatar profile-info__avatar_name">
               Jacques Cousteau
@@ -178,7 +186,43 @@
               </div>
             </div>
           </div>
+
+          <div class="popupDelate">
+            <form class="popupDelate__form">
+              <img
+                src="<%=require('./images/Close_Icon.png')%>"
+                alt="Close"
+                class="popupDelate__buttonClose"
+              />
+              <fieldset class="popupDelate__fieldset">
+                <h2 class="popupDelate__shure">¿Estas seguro/a?</h2>
+                <button class="popupDelate__button">Si</button>
+              </fieldset>
+            </form>
+          </div>
         </section>
+
+        <div class="changeProfile">
+          <form class="changeProfile__form">
+            <img
+              src="<%=require('./images/Close_Icon.png')%>"
+              alt="Close"
+              class="changeProfile__buttonClose"
+            />
+            <fieldset class="changeProfile__fieldset">
+              <h2 class="changeProfile__picture">Cambiar foto de perfil</h2>
+              <input
+                class="changeProfile__inputChange"
+                type="url"
+                required
+                name="link-picture"
+                placeholder="Enlace a la imagen"
+                id="input_link-picture"
+              />
+              <button class="changeProfile__savePicture">Guardar</button>
+            </fieldset>
+          </form>
+        </div>
 
         <section class="footer">
           <div class="copyright">

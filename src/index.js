@@ -9,6 +9,7 @@ import {
   profileName,
   profileAbout,
 } from "./utils/utils.js";
+import popupWithConfirm from "./components/popupWithConfirm.js";
 import Section from "./components/Section.js";
 import UserInfo from "./components/UserInfo.js";
 import PopupWithForm from "./components/PopupWithForm.js";

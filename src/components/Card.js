@@ -33,23 +33,22 @@ export default class Card {
     this._element
       .querySelector(".elements-name__place_like")
       .classList.toggle("elements-name__place_like_active");
-  }
+  } /*
   _handleRemove() {
     this.removeCard = this._element.remove();
-  }
+  }*/
   _setEventListeners() {
     this._element
       .querySelector(".elements-card__element_image")
       .addEventListener("click", () => {
         this._handleCardClick(this._name, this._link);
       });
-
-    this._element
+    /* this._element
       .querySelector(".elements-card__element_trash")
       .addEventListener("click", () => {
         this._handleRemove();
       });
-
+*/
     this._element
       .querySelector(".elements-name__place_like")
       .addEventListener("click", () => {
