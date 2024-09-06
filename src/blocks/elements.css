@@ -82,6 +82,11 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.element__counter {
+  color: black;
+  margin: auto;
+  margin-left: 20%;
+}
 .elements-name__place_like:hover {
   opacity: 0.5;
 }

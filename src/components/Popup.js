@@ -24,7 +24,9 @@ export default class Popup {
     //Funcion para cerrar el modal en superposicion
 
     this._popupElement
-      .querySelector(".popup__close, .popup__close-add, .modalImage__close")
+      .querySelector(
+        ".popup__close, .popup__close-add, .modalImage__close, .popupDelate__buttonClose, .changeProfile__buttonClose"
+      )
       .addEventListener("click", () => {
         this.close();
       });

@@ -13,8 +13,9 @@
 }
 .changeProfile__form {
   position: relative;
-  justify-content: center;
-  margin: auto;
+  max-width: 430px;
+  top: 40%;
+  left: 30%;
 }
 .changeProfile__fieldset {
   width: 430px;

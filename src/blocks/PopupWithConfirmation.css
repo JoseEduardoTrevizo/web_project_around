@@ -12,14 +12,16 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .popupDelate__form {
+  display: flex;
+  max-width: 430px;
   position: relative;
-  justify-content: center;
-  margin: auto;
+  top: 40%;
+  left: 30%;
 }
 .popupDelate__fieldset {
   width: 430px;
   height: 181px;
-  margin: 0;
+  margin: auto;
   padding: 0;
   border: 0;
   flex-direction: column;

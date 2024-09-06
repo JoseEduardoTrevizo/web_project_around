@@ -19,13 +19,22 @@ export default class PopupWithForm extends Popup {
     const form = this._popupElement.querySelector("form");
     form.addEventListener("submit", (evt) => {
       evt.preventDefault();
-      this._submitCallback(this._getInputValues());
-      form.reset();
-      this.close();
+      form.querySelector(
+        ".changeProfile__savePicture, .popupDelate__button, .popup__info_submit"
+      ).textContent = "Guardando...";
+
+      this._submitCallback(this._getInputValues()).then(() => {
+        form.querySelector(
+          ".changeProfile__savePicture, .popupDelate__button, .popup__info_submit"
+        ).textContent = "Guardar";
+        form.reset();
+        this.close();
+      });
     });
   }
   close() {
     const form = this._popupElement.querySelector("form");
     super.close();
+    form.reset();
   }
 }
