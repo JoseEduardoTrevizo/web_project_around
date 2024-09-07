@@ -1,4 +1,4 @@
-import { openImagePopup } from "../utils/utils.js";
+import { openImagePopup } from "../utils/utils";
 
 export default class Card {
   constructor(

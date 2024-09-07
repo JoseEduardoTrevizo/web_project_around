@@ -1,4 +1,4 @@
-import Card from "../components/Card.js";
+import Card from "../components/Card.1.js";
 import PopupWithImage from "../components/PopupWithImage.js";
 import popupWithConfirm from "../components/popupWithConfirm.js";
 import api from "../components/API.JS";
@@ -44,18 +44,18 @@ export function cardGenerator(name, link, user, cardData) {
     handleCardClick: () => {
       popupImage.open(name, link);
     },
-    handleDelateCard: (id, callback) => {
+    handleDelateCard: (cardId, callback) => {
       popupConfirm.open(() => {
-        api.deleteCard(id).then(() => {
+        api.deleteCard(cardId).then(() => {
           callback();
         });
       });
     },
-    handleAddLike: (id) => {
-      return api.addCardLike(id);
+    handleAddLike: (cardId) => {
+      return api.addCardLike(cardId);
     },
-    handleRemoveLike: (id) => {
-      return api.deleteCardLike(id);
+    handleRemoveLike: (cardId) => {
+      return api.deleteCardLike(cardId);
     },
   });
   return card.generateCard();

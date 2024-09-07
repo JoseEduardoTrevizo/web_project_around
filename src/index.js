@@ -1,5 +1,5 @@
 import "./page/index.css";
-import Card from "./components/Card.js";
+import Card from "./components/Card.1.js";
 import FormValidator from "./components/FormValidator.js";
 import {
   boton,
