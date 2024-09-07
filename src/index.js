@@ -75,6 +75,7 @@ api.getUserInfo().then((user) => {
             currentUser,
             element
           );
+
           sectionCards.addItem(newCard);
         },
       },
@@ -99,6 +100,7 @@ const popupAddButton = new PopupWithForm(
           currentUser,
           cardData
         );
+
         cardArea.prepend(card);
       });
   }

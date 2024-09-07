@@ -60,7 +60,7 @@ export default class Card {
     openImagePopup(this._name, this._link);
   }
 
-  _handlerLike() {
+  _handleAddLike() {
     const counter = this._element.querySelector(".element__counter");
     if (this._cardData.likes.some((like) => like._id === this._user._id)) {
       this._handleRemoveLike(this._cardData._id).then((card) => {
@@ -80,7 +80,7 @@ export default class Card {
       });
     }
   }
-  _handleRemove() {
+  _handleRemoveLike() {
     this._handleDelateCard(this._cardData._id, () => {
       this.removeCard = this._element.remove();
     });
@@ -94,12 +94,12 @@ export default class Card {
     this._element
       .querySelector(".elements-card__element_trash")
       .addEventListener("click", () => {
-        this._handleRemove();
+        this._handleRemoveLike();
       });
     this._element
       .querySelector(".elements-name__place_like")
       .addEventListener("click", () => {
-        this._handlerLike();
+        this._handleAddLike();
       });
   }
 }

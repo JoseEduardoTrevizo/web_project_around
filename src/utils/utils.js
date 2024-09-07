@@ -44,9 +44,9 @@ export function cardGenerator(name, link, user, cardData) {
     handleCardClick: () => {
       popupImage.open(name, link);
     },
-    handleDelateCard: (cardId, callback) => {
+    handleDelateCard: (id, callback) => {
       popupConfirm.open(() => {
-        api.deleteCard(cardId).then(() => {
+        api.deleteCard(id).then(() => {
           callback();
         });
       });
