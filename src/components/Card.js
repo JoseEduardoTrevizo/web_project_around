@@ -45,9 +45,9 @@ export default class Card {
     if (this._user._id !== this._cardData.owner._id) {
       trashButton.style.display = "none";
     }
-
+    console.log(this._user, this._id);
     if (this._cardData.likes.some((like) => like._id === this._user._id)) {
-      likeButton.classList.add(".elements-name__place_like_active");
+      likeButton.classList.add("elements-name__place_like_active");
     }
 
     const counter = this._element.querySelector(".element__counter");
